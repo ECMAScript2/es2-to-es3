@@ -6,8 +6,9 @@
  * for: IE4~5
  */
 Array.prototype.pop || (Array.prototype.pop = function () {
-    var t = this, r = t[t.length - 1];
+    // IE5 : this.length === 0, --this.length, this.length === 4294967296
+    var j = this.length, r = this[j - 1];
 
-    --t.length;
+    j && (--this.length);
     return r;
 });

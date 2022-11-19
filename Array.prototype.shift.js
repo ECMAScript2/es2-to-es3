@@ -6,10 +6,14 @@
  * for: IE4~5
  */
 Array.prototype.shift || (Array.prototype.shift = function () {
-    var t = this, r = t[0], i = 1, j = t.length;
+    var j = this.length; // IE5 : this.length === 0, --this.length, this.length === 4294967296
 
-    for (; i < j; ++i)
-        t[i - 1] = t[i];
-    --t.length;
-    return r;
+    if (j) {
+        var r = this[0], i = 1;
+
+        for (; i < j; ++i)
+            this[i - 1] = this[i];
+        --this.length;
+        return r;
+    };
 });
