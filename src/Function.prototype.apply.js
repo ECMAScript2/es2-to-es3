@@ -5,18 +5,18 @@
  * 
  * for: IE4~5
  * --------
- * Using `eval`. So Closure Compiler "ADVANCED" compilation is not possible!
+ * Using `eval`. So Closure Compiler "ADVANCED" and "SIMPLE" compilation is not possible!
  */
 Function.prototype.apply || (Function.prototype.apply = function (_x, _y) {
     var f = this,
-        x = _x != null ? _x : window,
+        x = _x != null ? _x : {},
         y = _y || [],
         j = y.length,
-        i = 0, r;
+        i = 0, r, a /** flag */, u /** = undefined */;
 
     x.__apply = f;
     if (!x.__apply) {
-        x.constructor.prototype.__apply = f;
+        a = x.constructor.prototype.__apply = f;
     };
     switch (j) {
         case 0: r = x.__apply(); break;
@@ -36,13 +36,7 @@ Function.prototype.apply || (Function.prototype.apply = function (_x, _y) {
             r = eval('x.__apply(' + r.join(',') + ')');
             // ↓ for Closure Compiler "ADVANCED" compilation
             // r = (new Function('x,y', 'return x.__apply(' + a.join(',') + ')'))(x, y);
-            break;
     };
-    x.__apply
-        ? (x === window
-            ? (x.__apply = void 0) // delete window.__apply <= IE~8 throw error!
-            :   delete x.__apply
-          )
-        : delete x.constructor.prototype.__apply;
+    a ? (delete x.constructor.prototype.__apply) : (x.__apply = u); // delete (window|document|element).__apply <= IE~8 throw error!;
     return r;
 });
