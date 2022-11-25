@@ -94,21 +94,23 @@ See the `gulpfile.js` of the following project for other usage examples.
 
 ## License
 
-[MIT License](https://opensource.org/licenses/MIT)
+es2-to-es3 is licensed under MIT license.
+
+(C) 2022 [itozyun](https://github.com/itozyun)
 
 ## Dependency Licenses
 
 <table>
 <thead>
 <tr>
-<th>Object and Method<th>Author<th>URL<th>License
+<th>Built-in objects and methods<th>Author<th>Link to original<th>License
 <tbody>
 <tr>
-<th><code>decodeURI</code>, <code>decodeURIComponent</code>, <code>encodeURI</code>, <code>encodeURIComponent</code><th>ヌルコムアーカイブス・デジタル制作室<th><a href="https://web.archive.org/web/20100413085309/http://nurucom-archives.hp.infoseek.co.jp/digital/trans-uri.html">TransURI (UTF-8)</a><th>?
+<th><code>decodeURI</code>, <code>decodeURIComponent</code>, <code>encodeURI</code>, <code>encodeURIComponent</code><td>ヌルコムアーカイブス・デジタル制作室<td><a href="https://web.archive.org/web/20100413085309/http://nurucom-archives.hp.infoseek.co.jp/digital/trans-uri.html">TransURI (UTF-8)</a><td>?
 <tr>
-<th><code>Array.prototype.indexOf</code><th>Mozilla Contributors<th><a href="https://web.archive.org/web/20131011160850/https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf#Compatibility">MDN / Array.prototype.indexOf</a><th><a href="https://web.archive.org/web/20131009222441/https://developer.mozilla.org/en-US/docs/Project:MDN/About?redirectlocale=en-US&redirectslug=Project%3ACopyrights#Copyrights_and_licenses">MIT or public domain</a>
+<th><code>Array.prototype.indexOf</code><td>Mozilla Contributors<td><a href="https://web.archive.org/web/20131011160850/https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf#Compatibility">MDN / Array.prototype.indexOf</a><td><a href="https://web.archive.org/web/20131009222441/https://developer.mozilla.org/en-US/docs/Project:MDN/About?redirectlocale=en-US&redirectslug=Project%3ACopyrights#Copyrights_and_licenses">MIT or public domain</a>
 <tr>
-<th><code>Array.prototype.pop</code>, <code>Array.prototype.push</code>, <code>Array.prototype.shift</code>, <code>Array.prototype.splice</code>, <code>Array.prototype.unshift</code><th>ofk<th><a href="https://ofk.hatenadiary.org/entry/20080904/1220485969">?D of K / Function.prototype.applyとかArray.prototype.spliceのIE5用のコード</a><th>?
+<th><code>Array.prototype.pop</code>, <code>Array.prototype.push</code>, <code>Array.prototype.shift</code>, <code>Array.prototype.splice</code>, <code>Array.prototype.unshift</code><td>ofk<td><a href="https://ofk.hatenadiary.org/entry/20080904/1220485969">?D of K / Function.prototype.applyとかArray.prototype.spliceのIE5用のコード</a><td>?
 <tr>
-<th><code>Function.prototype.apply</code>, <code>Function.prototype.call</code><th>ofk<th><a href="https://ofk.hatenadiary.org/entry/20080904/1220485969">?D of K / Function.prototype.applyとかArray.prototype.spliceのIE5用のコード</a><th>?
+<th><code>Function.prototype.apply</code>, <code>Function.prototype.call</code><td>ofk<td><a href="https://ofk.hatenadiary.org/entry/20080904/1220485969">?D of K / Function.prototype.applyとかArray.prototype.spliceのIE5用のコード</a><td>?
 </table>
