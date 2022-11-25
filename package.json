@@ -1,6 +1,6 @@
 {
   "name": "es2-to-es3",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "Polyfills of built-in objects and built-in methods to run IE6 and later code in early DHTML browsers.",
   "main": "index.js",
   "scripts": {
