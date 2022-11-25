@@ -1,7 +1,7 @@
 {
   "name": "es2-to-es3",
   "version": "0.9.1",
-  "description": "Polyfill of built-in objects and built-in methods to run IE6 and later code in early DHTML browsers.",
+  "description": "Polyfills of built-in objects and built-in methods to run IE6 and later code in early DHTML browsers.",
   "main": "index.js",
   "scripts": {
     "prepare": "gulp prepublish"
@@ -11,9 +11,9 @@
     "url": "https://github.com/ECMAScript2/es2-to-es3.git"
   },
   "bugs": {
-    "url": "https://github.com/ECMAScript2/es2-to-es3e/issues"
+    "url": "https://github.com/ECMAScript2/es2-to-es3/issues"
   },
-  "homepage": "https://github.com/ECMAScript2/es2-to-es3e#readme",
+  "homepage": "https://github.com/ECMAScript2/es2-to-es3#readme",
   "keywords": [
     "ECMAScript2",
     "javascript",

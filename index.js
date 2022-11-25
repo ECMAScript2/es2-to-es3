@@ -9,7 +9,7 @@ function process( source, opt_options ){
     const RESULT_OBJECT   = options.resultObject    || {};
     const minIEVersion    = options.minIEVersion    || 5.5;
     const minOperaVersion = options.minOperaVersion || 8;
-    const minGeckoVersion = options.minGeckoVersion || 0.8;
+    const minGeckoVersion = options.minGeckoVersion || 0.9;
 
     // polyfill
     const EMBED_ARRAY_PROTOTYPE_INDXOF = minIEVersion < 9 || minOperaVersion < 9.6 || minGeckoVersion < 1.8;
