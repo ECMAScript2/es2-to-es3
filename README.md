@@ -49,23 +49,23 @@ See the `gulpfile.js` of the following project for other usage examples.
 
 ## Options
 
-| Property              | Description                                                                     | Default value |
-|:----------------------|:--------------------------------------------------------------------------------|--------------:|
-| `minIEVersion`        |                                                                                 | `5.5`         |
-| `minOperaVersion`     |                                                                                 | `8.0`         |
-| `minGeckoVersion`     |                                                                                 | `0.9`         |
-| `skipEmbedPolyfills`  | Set `report.embeddedPolyfills` if you wont to embed twice. `*`: Never embed.    | `[]`          |
-| `forceEmbedPolyfills` | Set `report.requiredPolyfills` if you want to embed for other script file.      | `[]`          |
-| `resultObject`        | Set `resultObject = {}` if you want to use it for later tasks.                  | `null`        |
+| Property              | Description                                                                  | Default value |
+|:----------------------|:-----------------------------------------------------------------------------|--------------:|
+| `minIEVersion`        |                                                                              | `5.5`         |
+| `minOperaVersion`     |                                                                              | `8.0`         |
+| `minGeckoVersion`     |                                                                              | `0.9`         |
+| `skipEmbedPolyfills`  | Set `result.embeddedPolyfills` if you wont to embed twice. `*`: Never embed. | `[]`          |
+| `forceEmbedPolyfills` | Set `result.requiredPolyfills` if you want to embed for other script file.   | `[]`          |
+| `resultObject`        | Set `resultObject = {}` if you want to use it for later tasks.               | `null`        |
 
 1. Embedding polyfills is simply done by looking at the Identifier name. This may result in unnecessary embedding. For Example, Embed `Array.prototype.indexOf` polyfill for `"str".indexOf()`. In this case, use `skipEmbedPolyfills : ["Array.prototype.indexOf"]`.
 
 ### Result Object
 
-| Property            | Description                                                                     | Example |
-|:--------------------|:--------------------------------------------------------------------------------|--------:|
-| `requiredPolyfills` | Contains `forceEmbedPolyfills` and `skipEmbedPolyfills`.                        | `[]`    |
-| `embeddedPolyfills` |                                                                                 | `[]`    |
+| Property            | Description                                                                    | Example |
+|:--------------------|:-------------------------------------------------------------------------------|--------:|
+| `requiredPolyfills` | Contains `forceEmbedPolyfills` and `skipEmbedPolyfills`.                       | `[]`    |
+| `embeddedPolyfills` |                                                                                | `[]`    |
 
 ## Reference : Corresponding starting versions of built-in objects and built-in methods
 
