@@ -1,6 +1,6 @@
 # es2 to es3
 
-Polyfills of built-in objects and built-in methods to run IE6 and later code in early DHTML browsers.
+Polyfills of built-in objects and methods to run IE6 and later code in early DHTML browsers.
 
 And, tool to add the required polyfills to your code.
 
@@ -69,34 +69,26 @@ See the `gulpfile.js` of the following project for other usage examples.
 
 ## Reference : Corresponding starting versions of built-in objects and built-in methods
 
-| Built-in objects and methods  | IE  | Opera | Gecko | Chrome | Safari |
-|:------------------------------|----:|------:|------:|-------:|-------:|
-| `decodeURI`                   | 5.5 | 7.0   | 0.6   | 1      | ?      |
-| `decodeURIComponent`          | 5.5 | 7.0   | 0.6   | 1      | ?      |
-| `encodeURI`                   | 5.5 | 7.0   | 0.6   | 1      | ?      |
-| `encodeURIComponent`          | 5.5 | 7.0   | 0.6   | 1      | ?      |
-| `Function.prototype.apply`    | 5.5 | 7.0   | 0.6   | 1      | ?      |
-| `Function.prototype.call`     | 5.5 | 7.0   | 0.6   | 1      | ?      |
-| `Array.prototype.pop`         | 5.5 | 7.0   | 0.6   | 1      | ?      |
-| `Array.prototype.push`        | 5.5 | 7.0   | 0.6   | 1      | ?      |
-| `Array.prototype.shift`       | 5.5 | 7.0   | 0.6   | 1      | ?      |
-| `Array.prototype.splice`      | 5.5 | 7.0   | 0.6   | 1      | ?      |
-| `Array.prototype.unshift`     | 5.5 | 7.0   | 0.6   | 1      | ?      |
-| `Array.prototype.indexOf`(*4) | 9   | 9.60  | 1.8   | 1      | ?      |
-| `atob`(*1, *3)                | 10  | 10.50 | 1.0   | 1      | ?      |
-| `btoa`(*1, *3)                | 10  | 10.50 | 1.0   | 1      | ?      |
-| `JSON`(*2, *4)                | 8   | 10.50 | 1.9.1 | 3      | 4.0    |
+| Built-in objects and methods             | IE  | Opera | Gecko | Chrome | Safari |
+|:-----------------------------------------|----:|------:|------:|-------:|-------:|
+| `decodeURI`                              | 5.5 | 7.0   | 0.6   | 1      | ?      |
+| `decodeURIComponent`                     | 5.5 | 7.0   | 0.6   | 1      | ?      |
+| `encodeURI`                              | 5.5 | 7.0   | 0.6   | 1      | ?      |
+| `encodeURIComponent`                     | 5.5 | 7.0   | 0.6   | 1      | ?      |
+| `Function.prototype.apply`               | 5.5 | 7.0   | 0.6   | 1      | ?      |
+| `Function.prototype.call`                | 5.5 | 7.0   | 0.6   | 1      | ?      |
+| `Array.prototype.pop`                    | 5.5 | 7.0   | 0.6   | 1      | ?      |
+| `Array.prototype.push`                   | 5.5 | 7.0   | 0.6   | 1      | ?      |
+| `Array.prototype.shift`                  | 5.5 | 7.0   | 0.6   | 1      | ?      |
+| `Array.prototype.splice`                 | 5.5 | 7.0   | 0.6   | 1      | ?      |
+| `Array.prototype.unshift`                | 5.5 | 7.0   | 0.6   | 1      | ?      |
+| `Array.prototype.indexOf`(ECMAScript 5+) | 9   | 9.60  | 1.8   | 1      | ?      |
+| `atob`(*1, HTML5+)                       | 10  | 10.50 | 1.0   | 1      | ?      |
+| `btoa`(*1, HTML5+)                       | 10  | 10.50 | 1.0   | 1      | ?      |
+| `JSON`(*2, ECMAScript 5+)                | 8   | 10.50 | 1.9.1 | 3      | 4.0    |
 
 1. [es2-base64](https://github.com/ECMAScript2/es2-base64)
 2. es2-json (in preparation...)
-3. HTML5+
-4. ECMAScript 5+
-
-## License
-
-es2-to-es3 is licensed under MIT license.
-
-(C) 2022 [itozyun](https://github.com/itozyun)
 
 ## Dependency Licenses
 
@@ -110,7 +102,12 @@ es2-to-es3 is licensed under MIT license.
 <tr>
 <th><code>Array.prototype.indexOf</code><td>Mozilla Contributors<td><a href="https://web.archive.org/web/20131011160850/https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf#Compatibility">MDN / Array.prototype.indexOf</a><td><a href="https://web.archive.org/web/20131009222441/https://developer.mozilla.org/en-US/docs/Project:MDN/About?redirectlocale=en-US&redirectslug=Project%3ACopyrights#Copyrights_and_licenses">MIT or public domain</a>
 <tr>
-<th><code>Array.prototype.pop</code>, <code>Array.prototype.push</code>, <code>Array.prototype.shift</code>, <code>Array.prototype.splice</code>, <code>Array.prototype.unshift</code><td>ofk<td><a href="https://ofk.hatenadiary.org/entry/20080904/1220485969">?D of K / Function.prototype.applyとかArray.prototype.spliceのIE5用のコード</a><td>?
-<tr>
-<th><code>Function.prototype.apply</code>, <code>Function.prototype.call</code><td>ofk<td><a href="https://ofk.hatenadiary.org/entry/20080904/1220485969">?D of K / Function.prototype.applyとかArray.prototype.spliceのIE5用のコード</a><td>?
+<th><code>Array.prototype.pop</code>, <code>Array.prototype.push</code>, <code>Array.prototype.shift</code>, <code>Array.prototype.splice</code>, <code>Array.prototype.unshift</code>,<br><code>Function.prototype.apply</code>, <code>Function.prototype.call</code>
+<td>ofk<td><a href="https://ofk.hatenadiary.org/entry/20080904/1220485969">?D of K / Function.prototype.applyとかArray.prototype.spliceのIE5用のコード</a><td>?
 </table>
+
+## License
+
+es2-to-es3 is licensed under MIT license.
+
+(C) 2022-2023 [itozyun](https://github.com/itozyun)([blog](//outcloud.blogspot.com/))
