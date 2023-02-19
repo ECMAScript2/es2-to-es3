@@ -12,6 +12,11 @@ And, tool to add the required polyfills to your code.
 * `Array.prototype.pop`, `Array.prototype.push`, `Array.prototype.shift`, `Array.prototype.splice`, `Array.prototype.unshift`
 * `Array.prototype.indexOf`
 
+## Workaround bugs in Javascript implementation, learn about unimplemented
+
+1. [ECMAScript2/es2-postprocessor](https://github.com/ECMAScript2/es2-postprocessor) A post-processor that workaround bugs in the Javascript implementation and warns about unimplemented.
+2. [ECMAScript2/es2-regexpcompat](https://github.com/ECMAScript2/es2-regexpcompat), Mobile IE4 does not support `RegExp`!
+
 ## Usage
 
 ~~~js
@@ -45,7 +50,7 @@ See the `gulpfile.js` of the following project for other usage examples.
 
 1. [itozyun/web-doc-base](https://github.com/itozyun/web-doc-base)
 2. [ECMAScript2/es2-code-prettify](https://github.com/ECMAScript2/es2-code-prettify)
-3. [itozyun/rerejs](https://github.com/itozyun/rerejs)
+3. [ECMAScript2/es2-regexpcompat](https://github.com/ECMAScript2/es2-regexpcompat)
 
 ## Options
 
@@ -88,7 +93,7 @@ See the `gulpfile.js` of the following project for other usage examples.
 | `JSON`(*2, ECMAScript 5+)                | 8   | 10.50 | 1.9.1 | 3      | 4.0    |
 
 1. [es2-base64](https://github.com/ECMAScript2/es2-base64)
-2. es2-json (in preparation...)
+2. [es2-json](https://github.com/ECMAScript2/es2-json) (in preparation...)
 
 ## Dependency Licenses
 
