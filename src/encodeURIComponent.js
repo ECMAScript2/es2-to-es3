@@ -12,10 +12,11 @@
         // /[^!'-*.0-9A-Z_a-z~-]/g
         encodeURIComponent = function(x){return encode(x, 1);};
 
-        var skipEncodeURI = (function(){
+        var skipEncodeURI = {};
+        (function(skip){
             var encodeURIComponentTarget = '!\'()*-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~',
                 encodeURITarget = '#$&+,-/:;=?@',
-                skip = {}, i;
+                i;
         
             for (i = encodeURIComponentTarget.length; i;) {
                 skip[encodeURIComponentTarget.charCodeAt(--i)] = 2;
@@ -23,8 +24,7 @@
             for (i = encodeURITarget.length; i;) {
                 skip[encodeURITarget.charCodeAt(--i)] = 1;
             };
-            return skip;
-        })();
+        })(skipEncodeURI);
     };
 
     function encode (_x, kind) {
